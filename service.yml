@@ -1,0 +1,11 @@
+kind: Service
+metadata:
+  name: flask-service
+spec:
+  selector:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetport: 5000
+    nodeport: 30000
+  typy: Nodeport
